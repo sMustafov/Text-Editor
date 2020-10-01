@@ -40,7 +40,7 @@ text = Text(root, width=400, height=400)
 text.pack()
 
 menubar = Menu(root)
-filemenu = Menu(menubar)
+filemenu = Menu(menubar, tearoff=0)
 filemenu.add_command(label="New", command=newFile)
 filemenu.add_command(label="Open", command=openFile)
 filemenu.add_command(label="Save", command=saveFile)
